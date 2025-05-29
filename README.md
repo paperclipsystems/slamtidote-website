@@ -45,4 +45,4 @@ and you are set up!
 
 - Saanvi
 - Hafsah
-- Kya 
+-kya
