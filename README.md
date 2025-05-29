@@ -35,4 +35,4 @@ and you are set up!
 - Saanvi
 - Hafsah
 - Kya
-- Safiyah2
+- Safiyah
