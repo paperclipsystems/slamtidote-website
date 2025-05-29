@@ -33,3 +33,4 @@ and you are set up!
 ## paperclip members that have access to the repository!
 
 - Saanvi
+- Hafsah
