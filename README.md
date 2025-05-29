@@ -1,5 +1,6 @@
 # slamtidote-website
 
+
 ## setting up access to git!
 
 - log into git from the terminal
@@ -29,6 +30,16 @@ to test if your access it set up
 - merge your PR!
 
 and you are set up!
+
+### what to install after cloning the repository 
+### Prerequisites
+- Node.js (v18 or later) installed: https://nodejs.org
+
+### how to install (every individual will have to do this on their own device )
+  1. Clone the repo: (see above)
+  2. Navigate to the project directory (whatever directory you would have this file saved in)
+  3. Install dependencies: "npm install"
+  4. Start the app: "npm run dev"
 
 ## paperclip members that have access to the repository!
 
