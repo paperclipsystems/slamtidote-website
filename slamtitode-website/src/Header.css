@@ -1,0 +1,35 @@
+:root {
+  --font-color: #ffffff, white;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  border: 1px solid red;
+}
+
+nav {
+  height: 3.75rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1000;
+  border: 1px solid blue;
+}
+
+nav a.nav-link {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  align-items: center;
+  color: var(--font-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
