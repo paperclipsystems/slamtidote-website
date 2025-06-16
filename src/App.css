@@ -9,6 +9,16 @@
   font-family: "Special Elite", system-ui;
 }
 
+body {
+  margin: 6rem;
+  padding: 2rem;
+  background-image: url('/public/slamtitdoteBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
