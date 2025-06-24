@@ -1,5 +1,5 @@
 import slamLogo from "/slamlogo.svg";
-import "./Header.css";
+import "../styles/Header.css";
 
 function Header() {
   return (
