@@ -24,7 +24,7 @@ body {
 
 /* Homepage Container */
 .homepage-container {
-  max-width: 727px;
+  width: clamp(320px, 40vw, 727px);
   max-height: 338px;
   border-top: 6px solid #dfe0db;
   border-left: 6px solid #dfe0db;
