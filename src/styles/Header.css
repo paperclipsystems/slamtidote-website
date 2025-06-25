@@ -2,7 +2,7 @@
   --font-color: #ffffff, white;
 }
 
-header {
+.header {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -13,14 +13,14 @@ header {
   margin: 1rem;
 }
 
-nav {
+.header__nav {
   display: flex;
   gap: 1rem; /* spacing between links */
   margin-right: 2rem;
 
 }
 
-nav a.nav-link {
+nav a.header__link {
   box-sizing: border-box;
   display: flex;
   height: auto;

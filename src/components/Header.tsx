@@ -2,40 +2,21 @@ import slamLogo from "/slamlogo.svg";
 import "../styles/Header.css";
 
 function Header() {
+  const links = ["Our Story", "Workshops", "Events", "Media", "Get Involved"];
+
   return (
-    <>
-      <header>
-        <a href="#" target="_blank">
-          <img src={slamLogo} className="logo" alt="Slamtidote Logo" />
-        </a>
-        <nav>
-          <a className="nav-link" href="#">
-            Our Story
+    <header className="header">
+      <a href="#" aria-label="Homepage">
+        <img src={slamLogo} alt="Slamtitote Logo" />
+      </a>
+      <nav className="header__nav">
+        {links.map((label) => (
+          <a key={label} href="#" className="header__link">
+            {label}
           </a>
-          <a className="nav-link" href="#">
-            Workshops
-          </a>
-          <a className="nav-link" href="#">
-            Blogs
-          </a>
-          <a className="nav-link" href="#">
-            Events
-          </a>
-          <a className="nav-link" href="#">
-            Socials
-          </a>
-          <a className="nav-link" href="#">
-            Media Archive
-          </a>
-          <a className="nav-link" href="#">
-            Charities
-          </a>
-          <a className="nav-link" href="#">
-            Podcast
-          </a>
-        </nav>
-      </header>
-    </>
+        ))}
+      </nav>
+    </header>
   );
 }
 
