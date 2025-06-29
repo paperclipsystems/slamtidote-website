@@ -1,0 +1,34 @@
+:root {
+  --font-color: #ffffff, white;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  margin: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1rem; /* spacing between links */
+  margin-right: 2rem;
+
+}
+
+nav a.header__link {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  align-items: center;
+  color: var(--font-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}

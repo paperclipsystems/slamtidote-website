@@ -1,0 +1,99 @@
+.homepage__container {
+    background-image: url("/public/slamtitdoteBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Window Container */
+.window__container {
+  width: clamp(320px, 40vw, 727px);
+  max-height: 338px;
+  border-top: 6px solid #dfe0db;
+  border-left: 6px solid #dfe0db;
+  border-bottom: 6px solid #818181;
+  border-right: 6px solid #818181;
+  background: #bfbfbf;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.subheading__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-block: 0.5rem;
+  padding-right: 0.25rem;
+  padding-left: 3rem;
+  background: linear-gradient(90deg, #0044bf, #48acdd);
+}
+
+.subheading {
+  font-size: clamp(1rem, 3vw, 1.125rem);
+}
+
+.close__button {
+  border-top: 3px solid #dfe0db;
+  border-left: 3px solid #dfe0db;
+  border-bottom: 3px solid #818181;
+  border-right: 3px solid #818181;
+  width: 30px;
+  height: 30px;
+  background: #bfc1c3;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  top: 5%;
+  height: 90%;
+  width: 1px;
+  background: #000000;
+  transform: rotate(45deg);
+}
+
+span:nth-last-child(2) {
+  transform: rotate(-45deg);
+}
+
+.heading__container {
+  padding-top: 4rem;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 2rem;
+}
+.join,
+.next__event {
+  border-top: 4px solid #dfe0db;
+  border-left: 4px solid #dfe0db;
+  border-bottom: 4px solid #818181;
+  border-right: 4px solid #818181;
+  width: 250px;
+  height: 74px;
+  padding: 8px;
+  background: #bfc1c3;
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  font-family: "Special Elite", system-ui;
+  color: #000000;
+  z-index: 0;
+  position: relative;
+}
+
+.next__event::before {
+  content: "";
+  border: 3px dashed #818181;
+  border-radius: 2px;
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  width: 92.5%;
+  height: 80%;
+  z-index: 1;
+}

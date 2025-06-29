@@ -1,0 +1,26 @@
+/* Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem 0 2rem;
+  text-align: center;
+  font-family: "Special Elite", system-ui;
+  height: 100vh;
+}
+
+.parent__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 10/2;
+  width: 100%;
+  background-image: url("/public/slamtitdoteBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
