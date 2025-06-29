@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# slamtidote-website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## setting up access to git!
 
-Currently, two official plugins are available:
+- log into git from the terminal
+  git config --global user.name "saanvitel"
+  git config --global user.email "telukotisaanvi@gmail.com"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- clone repository
+  git clone https://<your-git-username>@github.com/paperclipsystems/slamtidote-website.git
 
-## Expanding the ESLint configuration
+if you're in, that's success! if not - create an access token!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- press on profile picture
+- go to settings
+- go to developer settings
+- press 'personal access tokens'
+- press 'Tokens (classic)'
+- press 'generate new token'
+- press 'generate new token (classic)'
+- name and tick the repo checkbox
+- press generate token button at the end
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+to test if your access it set up
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- create your branch
+- add you name to 'paperclip members that have access to the repository!'
+- go to your PR link
+- merge your PR!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+and you are set up!
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### what to install after cloning the repository
+
+### Prerequisites
+
+- Node.js (v18 or later) installed: https://nodejs.org
+
+### how to install (every individual will have to do this on their own device )
+
+1. Clone the repo: (see above)
+2. Navigate to the project directory (whatever directory you would have this file saved in)
+3. Install dependencies: "npm install"
+4. Start the app: "npm run dev"
+
+## paperclip members that have access to the repository!
+
+- Saanvi
+- Hafsah
+- kya
+- Fatima
+- Lily
