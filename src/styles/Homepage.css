@@ -7,8 +7,7 @@
 
 /* Window Container */
 .window__container {
-  /* width: clamp(320px, 40vw, 800px); */
-  width: 58vw;
+  width: clamp(500px, 58vw, 58vw);
   max-height: 450px;
   border-top: 6px solid #dfe0db;
   border-left: 6px solid #dfe0db;
@@ -31,7 +30,7 @@
 }
 
 .subheading {
-  font-size: 1.3vw;
+  font-size: clamp(.8rem, 1.3vw, 1.125rem);
   flex-grow: 1;
 }
 
@@ -46,6 +45,7 @@
   position: relative;
   margin-right: 3px;
   padding: 5px;
+  cursor: not-allowed;
 }
 
 span {
@@ -66,7 +66,7 @@ span:nth-last-child(2) {
 }
 
 .heading__container h1 {
-  font-size: 8vw;
+  font-size: clamp(70px, 8vw, 8vw);
   font-weight: 900;
   -webkit-text-stroke: 1px #000000;
   text-shadow: 1px 1px 2px #818181;
@@ -77,7 +77,7 @@ span:nth-last-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4vw;
+  gap: clamp(35px, 4vw, 4vw);
   padding-bottom: 2rem;
 }
 
@@ -87,15 +87,16 @@ span:nth-last-child(2) {
   border-left: 4px solid #dfe0db;
   border-bottom: 4px solid #818181;
   border-right: 4px solid #818181;
-  width: 23vw;
+  width: clamp(200px, 23vw, 23vw);
   height: 74px;
-  padding: 8px;
+  padding: 15px;
   background: #bfc1c3;
-  font-size: clamp(1rem, 3vw, 1.125rem);
+  font-size: clamp(.8rem, 1.5vw, 1.25rem);
   font-family: "Special Elite", system-ui;
   color: #000000;
   z-index: 0;
   position: relative;
+  cursor: pointer;
 }
 
 .next__event::before {
