@@ -1,5 +1,6 @@
 .homepage__container {
-    background-image: url("/public/slamtitdoteBackground.png");
+    background-image: url("/slamtidoteBackgroundHalfTone.png");
+    /* background-image: url("/public/slamtitdoteBackground.png"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
