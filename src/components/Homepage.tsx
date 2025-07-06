@@ -14,7 +14,7 @@ function Homepage() {
           </div>
         </div>
         <div className="heading__container">
-          <h1>Slamtitote</h1>
+          <h1>SLAMTIDOTE</h1>
         </div>
         <div className="button__container">
           <button className="join">Join us</button>
