@@ -110,3 +110,18 @@ span:nth-last-child(2) {
   height: 80%;
   z-index: 1;
 }
+
+/* Flowers */
+.flower__motif {
+  position: fixed;
+  height: clamp(5rem, 13vw, 13vw);
+  bottom: 10px;
+}
+
+#flower__motif__left {
+  left: 10px;
+}
+
+#flower__motif__right {
+  right: 10px;
+}
