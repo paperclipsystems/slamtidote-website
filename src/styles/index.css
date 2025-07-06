@@ -15,8 +15,8 @@
   box-sizing: border-box;
 }
 
-h1 {
+/* h1 {
   font-size: clamp(3rem, 3vw, 6rem);
   line-height: 1.1;
   -webkit-text-stroke: 1px #000000;
-}
+} */
