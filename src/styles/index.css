@@ -2,7 +2,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #131212;
+  background-color: #000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,8 +15,8 @@
   box-sizing: border-box;
 }
 
-h1 {
+/* h1 {
   font-size: clamp(3rem, 3vw, 6rem);
   line-height: 1.1;
   -webkit-text-stroke: 1px #000000;
-}
+} */
