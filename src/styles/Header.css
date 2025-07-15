@@ -2,6 +2,7 @@
   --font-color: #ffffff, white;
 }
 
+/* General Header Layout */
 .header {
   display: flex;
   width: 100%;
@@ -17,9 +18,9 @@
   display: flex;
   gap: 1rem; /* spacing between links */
   margin-right: 2rem;
-
 }
 
+/* Header Links */
 nav a.header__link {
   box-sizing: border-box;
   display: flex;
@@ -31,4 +32,60 @@ nav a.header__link {
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -0.5px;
+}
+
+nav a.header__link:hover {
+  color: #9ef654;
+}
+
+/* Chevron Icon */
+.header__chevron {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Dropdown Wrapper */
+.header__link-wrapper {
+  position: relative;
+}
+
+/* Dropdown Menu */
+.header__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: lightgrey;
+  min-width: 180px;
+  padding: 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header__link-wrapper:hover .header__dropdown {
+  display: block;
+}
+
+/* Dropdown Items */
+.header__dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  color: black;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.header__dropdown-item:hover {
+  background: #787171;
+}
+
+/* Dropdown Icon (CD) */
+.header__dropdown-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
