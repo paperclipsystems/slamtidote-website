@@ -85,8 +85,8 @@ nav a.header__link:hover {
 
 /* Dropdown Icon (CD) */
 .header__dropdown-icon {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   flex-shrink: 0;
   object-fit: contain;
 }
