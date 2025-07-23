@@ -60,7 +60,6 @@ nav a.header__link:hover {
   left: 0;
   background: lightgrey;
   min-width: 180px;
-  padding: 8px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,11 +71,10 @@ nav a.header__link:hover {
 .header__dropdown-item {
   display: flex;
   align-items: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
   color: black;
   text-decoration: none;
-  gap: 8px;
+  gap: 4px;
+  font-size: 20px;
 }
 
 .header__dropdown-item:hover {
@@ -85,8 +83,8 @@ nav a.header__link:hover {
 
 /* Dropdown Icon (CD) */
 .header__dropdown-icon {
-  width: 24px;
-  height: 24px;
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
   object-fit: contain;
 }
