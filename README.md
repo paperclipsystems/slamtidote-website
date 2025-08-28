@@ -50,4 +50,6 @@ and you are set up!
 - kya
 - Fatima
 - Lily
+- Vinuk
 - Anastasia
+
