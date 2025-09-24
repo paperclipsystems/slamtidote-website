@@ -126,6 +126,17 @@ slamtidote-website/
 
 ---
 
+## code hygiene!
+
+- Please add an @author statement before any page you make or any method you write to make it easy to track
+```
+// @author HafsahYas
+```
+OR
+```
+// @author Hafsah
+```
+
 ## paperclip members that have access to the repository!
 
 - Saanvi
