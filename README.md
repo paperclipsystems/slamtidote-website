@@ -129,11 +129,11 @@ slamtidote-website/
 ## code hygiene!
 
 - Please add an @author statement before any page you make or any method you write to make it easy to track
-```
+``` bash
 // @author HafsahYas
 ```
 OR
-```
+``` bash
 // @author Hafsah
 ```
 
