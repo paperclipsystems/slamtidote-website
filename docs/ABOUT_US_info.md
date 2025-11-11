@@ -8,3 +8,6 @@
 
 ### Features (Done)
 1. Create base documentation
+
+### Other Notes
+In order to have a functioning header and allow access to this page... we need to use react router `` npm install react-router-dom ``.
