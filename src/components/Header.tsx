@@ -1,57 +1,69 @@
+import { Link } from "react-router-dom";
 import slamLogo from "/slamlogo.svg";
-import cdIcon from "/cd-icon.png"; // Replace with your icon path
-import chevronIcon from "/chevron-down-white.png"; // Replace with your chevron path
+import cdIcon from "/cd-icon.png";
+import chevronIcon from "/chevron-down-white.png";
 import "../styles/Header.css";
 
+type NavItem = {
+  label: string;
+  to?: string;
+  dropdownItems?: { label: string; to: string }[];
+};
+
 function Header() {
-  const links = [
-    { label: "Our Story", href: "#" },
-    { label: "Workshops", href: "#" },
-    { label: "Blogs", href: "#" },
+  const links: NavItem[] = [
+    { label: "Our Story", to: "/about-us" },
+    { label: "Workshops", to: "/workshops" },
+    { label: "Blogs", to: "/blogs" },
     {
       label: "Media",
-      href: "#",
       dropdownItems: [
-        { label: "Media Archive", href: "#" },
-        { label: "Our podcast", href: "#" },
+        { label: "Media Archive", to: "/media/archive" },
+        { label: "Our podcast", to: "/media/podcast" },
       ],
     },
     {
       label: "Get Involved",
-      href: "#",
       dropdownItems: [
-        { label: "Charities", href: "#" },
-        { label: "Follow Us", href: "#" },
+        { label: "Charities", to: "/get-involved/charities" },
+        { label: "Follow Us", to: "/get-involved/follow-us" },
       ],
     },
   ];
 
   return (
     <header className="header">
-      <a href="#" aria-label="Homepage">
-        <img src={slamLogo} alt="Slamtitote Logo" />
-      </a>
+      <Link to="/" aria-label="Homepage" className="header__logo">
+        <img src={slamLogo} alt="SLAMTIDOTE Logo" />
+      </Link>
+
       <nav className="header__nav">
         {links.map((link) => (
           <div key={link.label} className="header__link-wrapper">
-            <a href={link.href} className="header__link">
-              {link.label}
-              {link.dropdownItems && (
-                <img
-                  src={chevronIcon}
-                  alt=""
-                  className="header__chevron"
-                />
-              )}
-            </a>
+            {link.to ? (
+              <Link to={link.to} className="header__link">
+                {link.label}
+              </Link>
+            ) : (
+              <button type="button" className="header__link header__btn">
+                {link.label}
+                {link.dropdownItems && (
+                  <img src={chevronIcon} alt="" className="header__chevron" />
+                )}
+              </button>
+            )}
 
             {link.dropdownItems && (
               <div className="header__dropdown">
                 {link.dropdownItems.map((item) => (
-                  <a key={item.label} href={item.href} className="header__dropdown-item">
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    className="header__dropdown-item"
+                  >
                     <img src={cdIcon} alt="" className="header__dropdown-icon" />
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
