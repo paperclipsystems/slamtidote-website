@@ -46,6 +46,8 @@ and you are set up!
 
 ### how to install (every individual will have to do this on their own device)
 
+*For Windows devices: Please use Command Prompt (cmd) and avoid Powershell, as Powershell will give you problems with NodeJS.*
+
 1. **Clone the repo** (see above).
 2. **Navigate to the project directory** (the folder that contains `package.json`).
    ```bash
